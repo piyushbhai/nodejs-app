@@ -21,7 +21,7 @@ WORKDIR /var/www/piyushprajapati/html
 # WORKDIR /usr/share/nginx/html
 RUN rm -rf *
 COPY --from=build /app/build .
-EXPOSE 3002
+EXPOSE 80
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
 
 
